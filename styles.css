@@ -5,13 +5,50 @@ body {
     height: 100vh;
     background-image: url(img/mario-bg.jpg);
     background-size: cover;
-    /* display: flex; */
     text-align: center;
 }
 
+/* .main-content {
+    display: flex;
+    border: 2px solid red;
+    justify-content: center;
+} */
+
 h1, h2 {
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
     font-family: Arial, Helvetica, sans-serif;
     color: slateblue;
+}
+
+.board-position {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    background-image: url(img/soil.png);
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board > div {
+    background-image: url(img/pipe.png);
+    background-size: cover;
+}
+
+.mole {
+    width: 90px;
+    height: 90px;
+    background-image: url(img/monty-mole.png);
+    background-size: 100%;
+    position: relative;
+    left: 50px;
 }
