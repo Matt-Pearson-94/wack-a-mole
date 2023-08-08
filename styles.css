@@ -37,6 +37,7 @@ h1, h2 {
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
+    /* position: absolute; */
 }
 
 #board > div {
@@ -45,10 +46,28 @@ h1, h2 {
 }
 
 .mole {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     background-image: url(img/monty-mole.png);
     background-size: 100%;
     position: relative;
-    left: 50px;
+    left: 35px;
+}
+
+.plant {
+    width: 110px;
+    height: 110px;
+    background-image: url(img/piranha-plant.png);
+    background-size: 100%;
+    position: relative;
+    left: 35px;
+}
+
+.gameover {
+    width: auto;
+    background-color: whitesmoke;
+    height: 100vh;
+    position: relative;
+    top: 0px;
+    visibility: hidden;
 }
